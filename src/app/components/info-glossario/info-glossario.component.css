@@ -1,0 +1,23 @@
+.container-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-link{
+   display: flex;
+   justify-content: end;
+}
+
+.link{
+    font-size: 12pt;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.link:hover{
+    color: #fff;
+    background-color: #007bff;
+}

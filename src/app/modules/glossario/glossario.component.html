@@ -1,0 +1,18 @@
+<form [formGroup]="form" class="form-cad-glossario">
+    <div class="form-header">
+        <h1> Nova Palavra</h1>
+        <a routerLink="" class="link">X</a>
+    </div>
+    <fieldset>
+        <input type="text" placeholder="Palavra-chave" formControlName="keyWord" />
+    </fieldset>
+    <fieldset>
+        <textarea type="text" placeholder="Siginificado" formControlName="description" rows="8"></textarea>
+    </fieldset>
+    <input type="hidden" formControlName="created_at" />
+
+    <div class="form-footer">
+        <button (click)="cancell()" class="cancell">Cancelar</button>
+        <button (click)="add()" class="add">Adicionar</button>
+    </div>
+</form>

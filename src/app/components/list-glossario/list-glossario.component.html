@@ -1,0 +1,26 @@
+<a routerLink="/cad" class="link">Cadastrar</a>
+
+<div class="container-items">
+    <section class="backNav">
+        <p [style]="{fontWeight:'bold'}"># Plavra chave</p>
+        <p [style]="{fontWeight:'bold'}">Data de Criação</p>
+        <p [style]="{fontWeight:'bold'}">Data de Modificação</p>
+    </section>
+    <section *ngFor="let i of todos" class="label-item">
+        <section *ngIf="i.id < quanti">
+            <div (click)="aparecer(i.id)" class="item">
+                <p class="item-kW">{{i.id+1}} {{i.keyWord}}</p>
+                <p class="date">{{i.created_at}}</p>
+                <p class="date">{{i.updated_at}}</p>
+
+            </div>
+            <div class="info-glossario" [style]="{display: 'none'}">
+                <app-info-glossario class="descer" [style]="{width:'100%'}" [meaning]="description"
+                    (click)="aparecer(i.id)"></app-info-glossario>
+            </div>
+        </section>
+
+    </section>
+    <button (click)="next()">></button>
+
+</div>

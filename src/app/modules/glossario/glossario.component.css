@@ -1,0 +1,73 @@
+.form-cad-glossario{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: calc(100% - 3.5rem);
+    margin: auto;
+    height: 100%;
+}
+
+.form-header{
+    display: flex;
+    height: 60px;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.form-cad-glossario fieldset{
+    margin-bottom:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.form-cad-glossario input,
+.form-cad-glossario textarea{
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    padding: 1em 0.5em;
+
+}
+
+.form-footer{
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.form-footer button{
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.add{
+    border: 1px solid #28a745;
+    color: #28a745;
+    background-color: transparent;
+}
+
+.add:hover{
+    background: #28a745;
+    color: #fff;
+}
+
+.cancell{
+    background-color: transparent;
+
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.cancell:hover{
+    background: #dc3545;
+    color: #fff;
+}
